@@ -4,7 +4,7 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  typescript as bootstrap,
   html,
   css,
   reactjs,
@@ -22,8 +22,17 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
+
+import react_bootstrap from "../assets/tech/react_bootstrap.png";
+import ucertify from "../assets/company/ucertify.png";
+import tcs from "../assets/company/tcs.png";
+import iiita from "../assets/company/iiita.png";
+import qualcomm from "../assets/company/qualcomm.png";
+
+import moviemania from "../assets/moviemania.png";
+import weather from "../assets/weather.png";
+import lipcolor from "../assets/lipcolor.png";
 
 export const navLinks = [
   {
@@ -42,19 +51,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Fullstack Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Coding Trainer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Content Writer",
     icon: creator,
   },
 ];
@@ -73,12 +82,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "BootStrap",
+    icon: bootstrap,
   },
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "React BootStrap",
+    icon: react_bootstrap,
   },
   {
     name: "Redux Toolkit",
@@ -97,10 +110,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -116,98 +125,80 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Application Developer",
+    company_name: "uCertify",
+    icon: ucertify,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2017 - March 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Spearheaded the completion of the Rubric Item Type project, working independently, to provide instructors/teachers with a dynamic evaluation table creation tool using React.",
+      "Successfully delivered several smaller projects, including browser games and an in-house text annotator, all built using React.",
+      "Commended as the Trainee of the Month for consistent exceptional performance."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Assistant System Engineer",
+    company_name: "Tata Consultancy Services",
+    icon: tcs,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "March 2018 - August 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated as part of a DevOps team in an Agile-based environment, focusing on the development & maintenance of the Secure DevOps Kit for Azure.",
+      "Enhanced manual test suites, reducing effort by 60%, and also revamped and maintained the project website for improved functionality.",
+      "Acknowledged with the ‘Step Up’ award in recognition of highly positive client feedback and exemplary performance.",
+      "Participated in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Masters Student & Teaching Assistant",
+    company_name: "Indian Institute of Information Technology, Allahabad (IIIT-A)",
+    icon: iiita,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "August 2019 - July 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Pursued a degree in Master of Technology in IT with a specialization in Software Engineering.",
+      "Worked as a teaching assistant to professors teaching undergraduate computer science courses.",
+      "Oublished a research paper in the field of Bioinfomatics and presented it at BIBM 2021 conference.",
+      "Completed my degree with a GPA of 9.3 (Honors with distinction).",
     ],
   },
-];
-
-const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Software Engineer",
+    company_name: "Qualcomm",
+    icon: qualcomm,
+    iconBg: "#E6DEDD",
+    date: "January 2021 - January 2023",
+    points: [
+      "Acted as the sole secure boot POC for pre-existing and new Automotive chipsets, responsible for SW enablement on actual HW and handling change requests in this domain.",
+      "Achieved a remarkable 40% reduction in boot-up time by optimizing necessary wait time-outs and introduced OEM customization capabilities to enhance flexibility.",
+      "Automated error-prone processes, resulting in a 60% increase in efficiency and 100% accuracy, significantly improving productivity.",
+      "Consistently recognized for exceptional contributions with multiple ThanQ awards.",
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Freelancer",
+    company_name: "Various organizations",
+    icon: backend,
+    iconBg: "#E6DEDD",
+    date: "August 2023 - Present",
+    points: [
+      "Currently active as a Freelancer, in roles like MERN stack developer, Coding Trainer, & Technical Writer.",
+    ],
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Movie Mania",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A website that allows users to login and browse movies, get movie suggestions and get answers to their questions related to the same via the integrated AI feature.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "openAI",
         color: "green-text-gradient",
       },
       {
@@ -215,51 +206,51 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: moviemania,
+    source_code_link: "https://github.com/RiniChandra7/movies-gpt",
   },
   {
-    name: "Job IT",
+    name: "Lipcolor Engine",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Toolkit for makeup enthusiasts to easily find duplicates of their favourite lipstick shades, receive recommendations, and suggest duplicates. ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "node",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: lipcolor,
+    source_code_link: "https://github.com/RiniChandra7/makeup_lipstick_project",
   },
   {
-    name: "Trip Guide",
+    name: "Weather Now",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A feature-packed web app that detects and illustrates weather conditions at your current location as well as 2 lakh+ cities around the world.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "chartjs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "context",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: weather,
+    source_code_link: "https://github.com/RiniChandra7/weather-app",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
