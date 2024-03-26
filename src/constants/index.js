@@ -191,7 +191,7 @@ const projects = [
   {
     name: "Movie Mania",
     description:
-      "A website that allows users to login and browse movies, get movie suggestions and get answers to their questions related to the same via the integrated AI feature.",
+      "A website that allows users to login and browse movies, get movie suggestions and get answers to their questions related to the same via the integrated AI feature. To access all features, kindly use non-Indian VPN.",
     tags: [
       {
         name: "react",
